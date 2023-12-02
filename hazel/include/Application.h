@@ -8,10 +8,11 @@ namespace Hazel
     class HAZEL_API Application
     {
     public:
-        Application();
         virtual ~Application();
 
         void Run();
+    protected:
+        Application();
     };
 
     static Application *CreateApplication();   // To be defined in client.
